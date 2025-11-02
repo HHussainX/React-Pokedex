@@ -1,14 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './css/App.css'
-import '../src/pages/Home'
-import Home from '../src/pages/Home'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import Home from './pages/Home.jsx'
+import Favorite from './pages/Favorite.jsx'
+import NavBar from './components/NavBar.jsx'
 
-function App() {
+export default function App() {
   return (
-    <Home />
+    <div>
+      <NavBar />
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/favorites" element={<Favorite />} />
+          <Route path="*" element={<div style={{ padding: 16 }}>Not Found</div>} />
+        </Routes>
+      </main>
+    </div>
   )
 }
-
-export default App
