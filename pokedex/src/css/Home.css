@@ -55,9 +55,30 @@
 
 .pokes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
   width: 100%;
+  max-width: 1200px;   /* keeps grid centered and not full-width */
+  margin: 0 auto;      /* centers it horizontally */
+  place-items: center; /* centers each card */
   box-sizing: border-box;
+}
+
+.poke-card {
+  width: 100%;
+  max-width: 280px;
+}
+
+.poke-poster {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poke-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ensures no cropping */
 }

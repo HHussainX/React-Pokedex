@@ -1,0 +1,137 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.detail-header .back-link {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.detail-header h1 {
+  margin: 0.2rem 0;
+  text-transform: capitalize;
+}
+
+.detail-header .id {
+  opacity: 0.6;
+  font-size: 0.8em;
+}
+
+.detail-header .types {
+  margin-top: 0.25rem;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+.detail-body {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.artwork {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: #111;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.info h2 {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem 1rem;
+  text-transform: capitalize;
+}
+
+.stats li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+  text-transform: none;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.back { display:inline-block; margin-bottom:.5rem; opacity:.85; text-decoration:none; }
+.id { opacity:.6; font-size:.8em; }
+.types { margin:.25rem 0 1rem; opacity:.85; }
+
+.detail-body {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.artwork {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: #111;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.info h2 { margin: .75rem 0 .5rem; }
+
+.stats {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .25rem 1rem;
+  text-transform: capitalize;
+}
+.stats li { display:flex; justify-content:space-between; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem 1rem;
+}
+
+.moves {
+  list-style: none;
+  padding: 0;
+  margin: .25rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .25rem 1rem;
+}
+.moves li { display:flex; justify-content:space-between; }
+.move-level { opacity:.8; }
+
+@media (max-width: 800px) {
+  .detail-body { grid-template-columns: 1fr; }
+  .artwork { height: 280px; }
+  .stats, .moves, .about-grid { grid-template-columns: 1fr; }
+}
+
+
+@media (max-width: 800px) {
+  .detail-body {
+    grid-template-columns: 1fr;
+  }
+  .artwork {
+    height: 280px;
+  }
+}
