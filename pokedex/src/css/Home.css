@@ -82,3 +82,40 @@
   height: 100%;
   object-fit: contain; /* ensures no cropping */
 }
+
+.filters-row {
+  display:flex; flex-wrap:wrap; gap:.5rem; margin:.75rem 0 1rem; justify-content: center;
+}
+.type-pill {
+  /*border:1px solid #ddd; padding:.4rem .6rem; border-radius:999px; cursor:pointer;*/
+  background:#000000;
+  color: #646cff;
+  font-weight: 500;
+}
+.type-pill:hover {
+  background-color: #a020f020; /* faint purple on hover */
+}
+
+.type-pill.active {
+  background-color: #a020f0;
+  color: #fff;
+  border-color: #a020f0;
+}
+
+.filter-select {
+  background-color: #2b2b2b; /* match your dark background */
+  color: #fff;
+  border: none;              /* 💡 removes the border */
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  outline: none;             /* removes blue outline when focused */
+  font-size: 0.9rem;
+  cursor: pointer;
+  appearance: none;          /* hides default arrow in some browsers */
+}
+
+/* Optional hover and focus styling */
+.filter-select:hover,
+.filter-select:focus {
+  background-color: #3a3a3a; /* slightly lighter on hover/focus */
+}
